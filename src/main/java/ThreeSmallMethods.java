@@ -19,6 +19,10 @@ public class ThreeSmallMethods {
     }
 
     public int firstTwoDigitInteger(int[] numbers) {
+        for(int i =0; i < numbers.length; i++)
+            if(numbers[i] >= 10 && numbers[i] <= 99 || numbers[i] <= -10 && numbers[i] > -100)
+                return numbers[i];
+
         return -1;
     }
 }
