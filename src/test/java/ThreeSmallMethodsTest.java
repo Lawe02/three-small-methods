@@ -78,7 +78,7 @@ class ThreeSmallMethodsTest {
 
   @Test
   void firstTwoDigitIntegerShouldSkip3DigitNumbers(){
-    int[] data = {100, 1, 12};
+    int[] data = {100, -100, 12};
     assertEquals(12, methods.firstTwoDigitInteger(data));
   }
 
