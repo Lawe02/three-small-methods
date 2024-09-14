@@ -51,6 +51,13 @@ class ThreeSmallMethodsTest {
   }
 
   @Test
+  void hasLegalGenderManInSwedenShouldReturnFalseWhenLengthOfPersonnumberNotEqualsTen(){
+    boolean result = methods.hasLegalGenderManInSweden("23123");
+    assertFalse(result);
+  }
+
+
+  @Test
   void firstTwoDigitIntegerShouldBe15(){
     int[] data = {1, 2, 15, 73};
     assertEquals(15, methods.firstTwoDigitInteger(data));
