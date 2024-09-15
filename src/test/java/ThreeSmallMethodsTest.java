@@ -25,6 +25,12 @@ class ThreeSmallMethodsTest {
     assertTrue(isYoung);
   }
 
+  @Test
+  void isYoungShouldReturnFalseWithHegativeAge(){
+    boolean isYoung = methods.isYoung(-10);
+    assertFalse(isYoung);
+  }
+
 
   @ParameterizedTest
   @ValueSource(strings = {
